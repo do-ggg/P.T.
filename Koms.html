@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Quarter — Compilation Performance Task</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-image: url('https://img.pikbest.com/backgrounds/20190117/225-communication-conference-technology-business-banner-background_1855114.jpg!bw700'); 
+            color: #000000;
+            text-align: center;
+            padding: 60px 50px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            background-color: #f4f7fa; 
+            padding: 15px;
+            width: 250px;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333; 
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px; 
+        }
+
+        /* Hover effect */
+        .sidebar a:hover {
+            background-color: #011427; 
+            color: white;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content h3 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(0, 51, 102, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .pie-chart {
+            max-width: 300px; 
+            margin: 20px auto; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>First Quarter — Compilation Performance Task</h1>
+    <p>Explore the wonders of Earth, Weather, Oceans, and Space</p>
+</div>
+
+<div class="nav">
+    <a href="Index.html">Earth science</a>
+    <a href="Chem.html">Chem</a>
+    <a href="Math.html">Math</a>
+    <a href="Phil.html">Phil</a>
+    <a href="Koms.html">Koms</a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Introduction to Komunikasyon P.T.</h2>
+        <ul>
+            <li><a href="#about"><p>Introduction</p></a></li>
+            <li><a href="#survey"><p>Survey</p></a></li>
+            <li><a href="#N"><p>Nalaman</p></a></li>
+            <li><a href="#pp"><p></p></a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="about">
+            <h2>“KAAMBONG: GILAS O BIYAYA”</h2>
+            <h3>‘Isang daan tungo sa kapayapaan at pagkakaisa’</h3>
+            <p>
+                Ang wika ay tumutukoy sa paraan ng paghahatid ng ideya, impormasyon,
+                kaalaman, kabatiran, kaisipan, karunungan, lohika, mensahe, opinion, pananaw sa
+                paraang pasalita o pasulat. Maraming iba’t ibang uri ng wika ayon sa bansang
+                gumagamit nito. Wika ang ginagamit natin sa pakikipagtalastasan. Isa ang Pilipinas sa
+                mga bansang may pinakamaraming wika sa buong daigdig. Depende sa pinagmulan,
+                merong humigit-kumulang 130 hanggang 195 wika sa bansa. Sa pamamagitan nito ay
+                naipapahayag natin ang ating saloobin at kaisipan. Sa pamamagitan din nito malalaman
+                natin kung ano ang gustong ipahiwatig ng ating kapwa. Nagkakaintindihan at
+                nagkakaunawaan ang bawat isa sa pamamagitan ng paggamit ng wika.
+            </p>
+            <p>Sa salitang “kaambong”, alam nyo ba ang kahulugan nito? Alam nyo ba na ang
+                salitang ito ay nakalimutan na ng mga tao at karaniwang ginagawa at natatanggap ng
+                mga tao sa pang-araw-araw nilang pamumuhay? Maraming wika ang may iba’t
+                ibang paraan ng kanilang pagpupuri upang makatanggap ng biyaya. Sa Cebuano ay
+                may isang salita na tinatawag na “kaambong” na nangangahulugang gilas o biyaya,
+                isang malalim na kahulugan ng salita. Ang kaambong ay hindi lamang ang pagtanggap
+                ng biyaya.
+            </p>
+        </section>
+
+        <section id="survey">
+            <h3>Survey</h3>
+            <p>Ayon sa survey, sa tanong na; kung may alam ba sila sa salitang “kaambong”,
+                kung oo bakit at saan nila ito nalaman, at kung paano nakatutulong ang salitang ito sa
+                pagtataguyod ng kapayapaan at pagkakaisa sa ating komunidad?</p>
+            <p>Ayon sa mga respondente, mas marami ang hindi alam kung ano ang kahulugan
+                ng salitang “kaambong” kumpara sa mga nagbigay opinyon lamang. Sagot pa ni
+                Lorraine isa sa mga nag respondente, “Para sa akin, ang salitang kaambong ay
+                nagpapahayag ng kagandahan ng isang tao. Pamilyar lamang ito sapagkat ito ay
+                minsan ko nang narinig. Nakalimutan ko lang kung saan pero naaalala ko parin ang
+                kahulugan nito. Nakakatulong ang salitang ito sa pagtataguyod ng pagkakaisa at
+                kapayapaan sa pamamagitan ng pagpapakita na kabutihan o kagandahan sa ibang tao
+                at biyaya na matatanggap ng mga taong nagpapahayag o nagpapakita ng kagandahan
+                sa ibang tao.”</p>
+           <p>100% sa mga nag responde ang wala nakatagpo ang salitang “kaambong” pero
+            nakapagbigay naman sila ng kahulugan nito at 0% naman o wala talaga sa mga nag responde ang
+            nakatagpo sa salitang ito.</p>
+
+            <div class="pie-chart">
+                <canvas id="myPieChart"></canvas>
+            </div>
+
+            <script>
+                const ctx = document.getElementById('myPieChart').getContext('2d');
+                const myPieChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Yes', 'No'],
+                        datasets: [{
+                            data: [0, 100],
+                            backgroundColor: ['#36A2EB', '#FF6384'],
+                            hoverOffset: 4,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        animation: {
+                            animateRotate: true,
+                            animateScale: true
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    boxWidth: 20
+                                }
+                            }
+                        }
+                    }
+                });
+            </script>
+
+        </section>
+
+        <section id="N">
+            <h3>Nalaman</h3>
+            <p>At ngayon ay nalaman na natin kung meron pa bang tao ang may alam tungkol
+            sa kahulugan ng salitang “kaambong” sa pagbibigay survey upang gamitin batayan sa
+            pagkolekta ng impormasyon galing sa ibang tao. Tukuyin na naman natin kung ano nga
+            ba ang kahulugan ng salitang “Kaambong” at kung paano ba talaga ito nakakatulong
+            sa pagsulong at pagtataguyod ng pagkakaisa at kapayapaan sa komunidad sa napiling
+            wika ng salita. Ang “Kaambong” ay tumutukoy sa kahulugang gilas o biyaya.
+            </p>
+           <p>Kaambong ay isang estado ng pagpapakabanal ng Diyos; ang kalagayan ng isa na nasa ilalim
+            ng gayong banal na impluwensya. Isang kalidad ng pagiging malinis at mapanlikha. Isang pinong
+            kalidad ng kagandahan. Kung sa pangungusap pa “Ang biyaya ng Panginoon ay walang humpay.” na
+            nagpapakita ng pagmamahal ng Diyos sa tao sa pagbibigay ng biyaya na nagtataguyod ng
+            kapayapaan at pagkakaisa sa gawa ng Diyos sa tao. Kaambong din ay tumutukoy sa kagandahan at
+            kabutihan ng tao sa ibang tao ng pagpapakita ng pagpapabuti sa isang komunidad sa pagtataguyod
+            ng kapayapaan at pagkakaisa.
+            </p>
+           <p>Sa pamamagitan ng kaambong, natuto tayong magdasal at maging mabuti sa ating kapwa
+            tao, at itinuro sa atin na bawat pagsubok na ating nararanasan at mararanasan pa sa hinaharap. Ang
+            kaambong na ang pagdarasal at pagiging mabuti sa kapwa natin tao ay isang katangian ng bawat
+            tao na hindi dapat mawala dahil ito ang nagpapatunay na ang pagsusulong ng pagkakaisa at
+            kapayapaan ay mahalaga sa buhay ng tao at sa ating komunidad.
+            </p>
+            <table>
+                 <tr>
+                <th>English</th>
+                <th>Grammar</th>
+                <th>Cebuano</th>
+                <th>Tagalog</th>
+                <th>Hiligaynon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>dignity</td>
+                <td></td>
+                <td>kaambong</td>
+                <td>dignidad</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>grace</td>
+                <td>Noun</td>
+                <td>kaambong</td>
+                <td>Kabutihan, kagandahan, biyaya, dasal sa pagkain</td>
+                <td>kaalwan, bugay, grasyan</td>
+            </tr>
+            </table>
+        </section>
+        <p>Kahit sa ibang relihiyon makikita natin na ang salitang “Kaambong” ay grasya o biyaya,
+            kabutihan, at kagandahan pa rin ang kahulugan. Isang salitang cebuano na ginagawa ng mga tao sa
+            pagdarasal at natatanggap na biyaya galing sa Diyos sa pagiging mabuti sa kapwa natin tao sa ating
+            komunidad</p>
+        
+            <p>  Sa mga aral ng Bibliya at mga turo ng Diyos, itinuturo ang salitang kaambong bilang isang mabuting gawain at katangian. Ito ay nagsisilbing gabay sa atin upang maging matatag, mabuti, at manalangin sa bawat hamon sa ating buhay. Sa bawat problema sa buhay, kaambong ang nagtuturo sa atin na gawin ito upang manatiling matatag at maniwala sa kabutihan at panalangin ng Diyos.
+            </p>
+                    <p>Sa karagdagan, maraming mga relihiyon at kultura ang gumagawa pa rin nito. Sa kulturang cebuano, mahalaga ang kaambong upang magkaroon ng mapayapang komunidad at nagkakaunawaan isa’t isa. Marami pa ring komunidad ang hindi mapayapa at nag-away-away pa dahil lamang hindi sila nagkakaisa, hindi nagtutulungan, walang komunikasyon, at walang pagkakaintindihan. Kapag ang komunidad na walang kapayapaan at pagkakaisa ay magulo at hindi ito nakakabuti sa isang komunidad kung manatili lamang itong magulo at walang pagkakaisa kaya mahalaga sa isang komunidad ang magkaroon ng kabutihan at kagandahan dahil gusto ng Diyos na ang isang komunidad ang mapayapa, nagkakaisa, nagtutulungan, at nakikipag-kapwa tao. 
+            </p>
+                    <p> Ang kaambong o ang kagandahan at biyaya ng tao ay mahalaga sa ating buhay. Mahalaga ang pakikipagkapwa tao dahil ito ay nagpapakita ng kabutihan o magandang kalooban ng tao. Ang pagiging mabuti at biyaya na galing sa Diyos ay katangian ng tao bilang isang Pilipino at parte ito sa ating kultura na nagsusulong ng kapayapaan. Pagbabahagi at pagbibigay ng pangangailangan sa kapwa mo sa abot ng iyong makakaya ay nagpapakita ng kaambong o kagandahan o biyaya. Mahalaga ang kaambong dahil ito ay nagtataguyod ng kapayapaan at pagkakaisa sa ating komunidad at pagmamahal sa ating kapwa tao dahil itoy nagpapakita ng pagdadamayan at ito'y tanda ng bayanihan sa isang kulturang cebuano. Isang kaugalian na dapat ibahagi sa tao ang kaambong at ipaalam sa kanila na ang pagdadasal o pananalangin sa Diyos ay dapat tungkulin o katangian na sa biyaya na bigay ng Diyos. Isang mabisang paraan para sa lahat. </p>
+                    <p>Sa pamamagitan ng kaambong, makakabuo tayo ng magandang kinabukasan, magandang komunikasyon sa ating kapwa, pakikipagkapwa tao, nagkakaintindihan, at pagtutulungan upang makamit ang kapayapaan at pagkakaisa sa bawat komunidad at rehiyon. </p>
+                    <p> Sa mundong puno ng gulo at kahirapan, ang kaambong ang nagsisilbing daluyan ng kapayapaan at pagkakaisa. Isang salitang nagpapahiwatig na sa kabila ng gulo at kahirapan na nararanasan ng tao, meron paring pag-asa at solusyon na gawa sa tao na galing sa awa ng Diyos. Dahil sa Kaambong, hindi lamang ito nakakatulong sa sarili at komunidad, kundi sa lahat ng aspeto sa buhay ng tao at maging inspirasyon sa ibang tao upang maging gawain sa pang-araw-araw upang lumapit sa Diyos — mahirap man o mayaman, magulo man o payapa, mabait man o masama, — kung tayo ay lumapit sa Diyos at magsumikap — kabutihan at biyaya ay ating matatanggap. 
+            </p>
+                    <p>   Sa kabuuan, kami ay mga Executive Director (ED) na nagsaliksik at binuo ang isang sanaysay tungkol sa kaambong na may kaugnayan sa kultural na mga wika sa kulturang cebuano na nagtataguyod ng kapayapaan at pagkakaisa sa bawat komunidad at rehiyon.
+            </p>
+        
+        
+        
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Compilation Performance Task. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

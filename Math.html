@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Quarter — Compilation Performance Task</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-image: url('https://t4.ftcdn.net/jpg/02/99/84/89/360_F_299848927_S0EwX0P6HWGigW6qZWFIBaczKMQuq5D9.jpg'); 
+            color: #000000;
+            text-align: center;
+            padding: 60px 50px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            background-color: #f4f7fa; 
+            padding: 15px;
+            width: 250px;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333; 
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px; 
+        }
+
+        .sidebar a:hover {
+            background-color: #011427; 
+            color: white;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .content {
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content h3 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(0, 51, 102, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .chart-container {
+            margin-top: 40px;
+        }
+
+        canvas {
+            max-width: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>First Quarter — Compilation Performance Task</h1>
+    <p>Explore the wonders of Earth, Weather, Oceans, and Space</p>
+</div>
+
+<div class="nav">
+    <a href="Index.html">Earth science</a>
+    <a href="Chem.html">Chem</a>
+    <a href="Math.html">Math</a>
+    <a href="Phil.html">Phil</a>
+    <a href="Koms.html">Koms</a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Introduction to Math P.T.</h2>
+        <ul>
+            <li><a href="#about">Introduction</a></li>
+            <li><a href="#Dt">Data</a></li>
+            <li><a href="#FA">Families affected by water pollution</a></li>
+            <li><a href="#TA">Total amount of plastic</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="about">
+            <h2>Introduction</h2>
+            <p>Pollution has been a significant problem worldwide...</p>
+        </section>
+
+        <section id="Dt">
+            <h2>Data</h2>
+            <p>According to data from 2021, the state of the water in the Philippines shows
+            that 56% of the nation's major water resources are polluted, 43% of which are
+            rivers, accounting to a total of 99% of polluted body waters. The availability of water
+            in the Philippines is alarming that the devastating problem causes the water to
+            change in quality</p>
+        <p>However, one thing to note is that water pollution does not only affect those
+            organisms inhabiting a particular area, like the marine organisms. This also results
+            in affecting a rural community or area that lacks access to clean water. Despite the
+            vast population of the country with over 119,106,224 people, a growth rate of 1.51%
+            from last year, at least 91% of households have the opportunity to access basic water
+            services leaving 8% behind. On the other hand, there are some regions that have
+            access as low as 62% making it still inadequate as 52% of some households in the
+            Philippines do not have access to water supply.
+            </p>
+        <p>The Senate of the Philippines (SEPO 2023), stated that the Annual Poverty
+            Indicators Survey 2022 indicated that there are at least 96.3% equivalent to 25.9
+            million families that can access safe drinking water from improved water sources.
+            However there are 2.4% (646,608 families) left behind with safe water sources, like
+            surface water and unprotected wells.</p>
+            
+        </section>
+
+        <section id="FA">
+            <h2>Families affected by water pollution</h2>
+                        <p>Referring to the graph Below, it shows a concerning amount of families that
+are gonna be affected by water pollution for the next 10 years. Every year the
+number of families affected by the pollution increases steadily. We can see a big
+jump in the year 2029 to 2032, with over 1,632,832 to nearly half a 100 million
+families. This means that for the next 10 years, there will be almost 60 million
+families that will be affected by the water pollution if those families that have access
+to safe water sources are constant and stable.</p>
+                <p>According to data from last year, the Philippines is the leading country with
+                    the most contribution to water pollution. Annually, contributing 36% of the world’s
+                    total ocean plastic pollution averaging to 3.3kg of plastic per person.</p>
+            <div class="chart-container">
+                <canvas id="familiesChart" width="600" height="300"></canvas>
+            </div>
+        </section>
+        
+        <section id="TA">  
+            <h2>Total amount of plastic</h2>
+          <p>According to the graph below, it shows that for the next 9 years, there will
+                    be nearly half 2 million plastic that will be in the ocean with 3.3kg of plastic
+                    contributed per person annually</p>
+                <p>It is also worth mentioning that rural areas and marine ecosystems are linked
+                    to water pollution. If actions are not taken immediately, not only will the families be
+                    affected but also the life below water. Our marine ecosystem will also be put into risk
+                    threatening the lives of thousands of marine organisms. We should open up our eyes
+                    and take a proactive approach to resolve this problem from happening anytime soon
+                    for more future generations to come</p>
+   
+            <div class="chart-container">
+                <canvas id="plasticChart" width="600" height="300"></canvas>
+            </div>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Earth Science Resources | All Rights Reserved</p>
+</footer>
+
+<script>
+    // Families Affected Chart
+    var ctxFamilies = document.getElementById('familiesChart').getContext('2d');
+    var familiesChart = new Chart(ctxFamilies, {
+        type: 'line',
+        data: {
+            labels: ['2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'],
+            datasets: [{
+                label: 'Families Affected',
+                data: [0, 1000000, 2000000, 3000000, 4000000, 5000000, 6000000, 7000000, 8000000, 9000000, 55000000],
+                borderColor: 'blue',
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 5000000
+                    },
+                    max: 60000000
+                }
+            }
+        }
+    });
+
+    // Total Amount of Plastic in the Ocean
+    var ctxPlastic = document.getElementById('plasticChart').getContext('2d');
+    var plasticChart = new Chart(ctxPlastic, {
+        type: 'bar',
+        data: {
+            labels: ['2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'],
+            datasets: [{
+                label: 'Amount of Plastic (in kg)',
+                data: [350000, 350000, 400000, 440000, 470000, 580000, 690000, 850000, 1100000, 1530000],
+                backgroundColor: 'rgba(54, 162, 235, 0.8)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                barThickness: 40
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Amount of Plastic (kg)',
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return value.toLocaleString();
+                        }
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Year',
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

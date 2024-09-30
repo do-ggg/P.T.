@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Quarter — Compilation Performance Task</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            margin-bottom: 15px;
+            color: #000000;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify; 
+        }
+
+
+        .header {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/027/729/228/large_2x/grunge-background-with-space-for-text-or-image-vintage-texture-abstract-art-background-design-vintage-sepia-toned-ai-generated-free-photo.jpg'); 
+            color: white;
+            text-align: center;
+            padding: 60px 50px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+
+
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .nav a:hover {
+            background-color: #575757;
+        }
+
+   
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+     .sidebar {
+    background-color: #f4f7fa; 
+    padding: 15px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; 
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.sidebar a:hover {
+    background-color: #011427;
+    color: white;
+}
+
+
+.sidebar h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.sidebar a::before {
+    content: url('icon-path.png'); 
+    margin-right: 10px;
+}
+        
+
+        
+        .content {
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content h3 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+           footer {
+            background-color: rgba(0, 51, 102, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.4);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="header">
+    <h1>First Quarter — Compilation Performance Task</h1>
+    <h3>Explore the wonders of Earth, Weather, Oceans, and Space</h3>
+</div>
+
+
+<div class="nav">
+    <a href="Index.html">Earth science</a>
+    <a href="Chem.html">Chem</a>
+    <a href="Math.html">Math</a>
+    <a href="Phil.html">Phil</a>
+    <a href="Koms.html">Koms</a>
+</div>
+
+
+<div class="container">
+
+   
+    <div class="sidebar">
+        <h2>Introduction to Philosophy P.T.</h2>
+         <ul>
+            <li><a href="#about" style><p>Water Scarcity: The Dilemma of Agricultural Needs vs. Conservation</p></a></li>
+            <li><a href="#yy" style><p>The Dilemma of Deforestation and the Role of Responsible Consumption and Production in Promoting Ecological Peace</p></a></li>
+            <li><a href="#kk" style><p>Addressing Water Pollution through Ethical Consumptions</p></a></li>
+            <li><a href="#dd" style><p>Nature’s Advocates: WWF Philippines and the Fight for Biodiversity</p></a></li>
+            <li><a href="#gg" style><p>A Call for Sustainable Consumption and Production Amidst to The Global Arsenic Problem</p></a></li>
+        </ul>
+    </div>
+
+    
+    <div class="content">
+     <section id="about">
+        <h1>Philosophy Compilation</h1>
+
+        <h2>Water Scarcity: The Dilemma of Agricultural Needs vs. Conservation</h2>
+           <h3>By: Jorge Vincent B. Zalsos</h3>
+        
+        <p>
+            In our current society, there are vast topics regarding various environmental issues where
+            each one of these has a significant impact on our environment. It is crucial for us to acknowledge
+            what our actions will and can do to our surroundings considering that it ripples throughout the
+            environment. With balancing and establishing an ecological peace, it’s merely not just a goal, but
+            an achievement towards for the betterment of our planet. However, despite such a positive mindset,
+            these are difficult to achieve in a modern time that we are currently living in. From the increase of
+            population, to the rapid growth of urbanization, global warming, climate change and any other
+            factors that can directly pose a threat. Some of these could also result into dilemmas. That’s why
+            we are responsible for these consequences because they are under our influences done with our
+            human actions. 
+        </p>
+        <p>
+            The United Nations has set 17 Sustainable Development Goals specified for a type of issue,
+one of which is the Goal 12 Responsible Consumption and Production aiming to imply that as a
+human we should look for sustainable ways on how we can use our resources that minimizes its
+impact on the environment. Water is among one of the most important substances on our planet
+catering to various of life forms in diverse ecosystems and habitats such as forests and wetlands.
+But nowadays, the use of our water is quite concerning for a fact that it has resulted into a rapid
+depletion of water resources leading into scarcity. This dilemma is all about exploring ways on
+how to conserve our water resources, but despite these solutions, it is also expected that the demand
+for water on agricultural needs will also comprise. We have a lot of ethical principles that are
+buried within ourselves and we can use these on how we can attain a quality of life, and at the
+same time, it can also be done in aligning it with SDG 12 without the means of compromising our
+surroundings in such a way that these principles are done with passion and sincerity where it can
+be beneficial for all. According to the eye of consequentialism, it judges our actions whether if it’s
+right or wrong under its consequences. Actions can be good or bad, but these are just the basis of
+the results done with our decisions. With conserving water resources is one of the ways that we
+can integrate one of our ethical principles since the conservation of water resources can benefit to
+everyone and therefore it is a valid reason considering that we are experiencing an alarming rate
+of depletion on our water resources. However, following the conservation of water resources
+means that it can result into an increase of demand for agricultural purposes. These two falls under
+the field of Jeremy Bentham who stated that all happiness is equal. And if in a logical sense, these
+are our actions that Jeremy Bentham wants us to be aware of, conserving water and the increase
+of demand is valid by the means of beneficiary to both situations bringing more satisfaction than
+involving destructions
+        </p>
+        <p>
+            There are quite a lot of insights that we can gain when we make our choices that varies
+from one person to another. Such that if these choices are done directly towards our environment.
+Making environmentally responsible choices is not just to serve, but it is a duty as a human person
+on how we can analyze one problem thoroughly with the influence of our decisions. The personal
+insights that I gained about making responsible choices for the environment helped me determine
+if that these can benefit as a whole for those that involved with my choices. First, when we gather
+passion and sincerity it can make our action fulfillable in a way that it can be done with full
+potential. We can be able to examine how these environmental issues arise and what actions can
+be taken to solve it immediately. Second, as I have mentioned above that whether if it can benefit
+as a whole considering that our actions can sometimes led to foreshadowing so it is best to ensure
+that it is assessed correctly. Third, since our actions are under our choices like collaboration for
+example, we should measure it regardless of how small the contribution is as long as it can
+encourage everyone to act this way. 
+        </p>
+        <p>
+            In regards to my analysis, there are quite a lot of recommendations to be taken for achieving
+sustainability. Proposing a program for example, it will make everyone gain additional
+backgrounds to the arisen environmental issues just like what I have mentioned above that no
+matter how small the contribution is as long as we can participate or collaborate to each other in
+fulfilling ecological balance and peace. Education is also one of the most important factors to
+achieve sustainability because aside from proposing a program, it is best to acknowledge what
+education can do to us and there are a lot such as, (1) we are environmentally aware (2) we are
+able to volunteer to any environmental projects and lastly, (3) we can be able to provide more room
+in creating awareness about heavy environmental issues. Lastly, educational materials like books,
+articles or journals can enhance our awareness towards the environmental issues that surrounds us.
+We can relate these materials to what we are experiencing and how it is relevant to our today’s
+society and sometimes these materials provide any beneficial tips to reduce our impact to the
+environment. 
+        </p>
+        <p>
+            Our planet has already provided us with vast of natural resources, so these
+recommendations can contribute in achieving the SDG 12 because in the eye of this development,
+it can lessen the impact of what our actions can lead to the environment. With over 11 targets of
+SDG 12, each one of these should be followed and taken seriously. Target 12.2 Sustainable
+Management and Use of Natural Resources is one prime example, using our water resources
+responsibly without compromising what is hidden under these body of waters can promote
+harmonious balance between economic, social and environmental development. Following SDG
+12 can be the gateway to reduce the depletion of water resources for more future generations to
+come. 
+        </p>
+ 
+    <section id="yy">
+        <h2>The Dilemma of Deforestation and the Role of Responsible Consumption and Production in Promoting Ecological Peace</h2>
+          <h3>  By: Kzathrea Venice P. Agbon</h3>
+
+          <p>
+            As we all know there are different types of environmental issues that we are currently facing
+today, and one of those issues is deforestation. Deforestation is the process of cutting down or
+clearing large areas of forests, usually to make space for farming, building, or other human
+activities. This destroys trees and plants, which could lead to the loss of wildlife habitats and
+reduces Earth's natural ability to absorb carbon dioxide, which contributes to climate change.
+Though this environmental issue is quite common and mostly acted by humans, we can say that
+this issue has a connection with sustainable consumption and production towards our
+environment. Since, sustainable consumption and production focuses on the natural resources
+that we humans deplete in order for us to have our basic needs. It's important to understand that
+we must also not abuse the natural resources that we have because it might cause a negative
+impact, not only towards our community but also our environment. In engaging in the operation
+of deforestation, one would find themselves in a dilemma on whether they should do it for
+economical development or halt it as it may harm the environment. They could choose to extract
+natural resources for human needs and production but have a negative impact towards the
+environment or to sustain the environment but have lesser natural resources which could create a
+negative impact towards humans. This idea would lead one into an internal conflict where they
+vary the consequences through their chosen actions.
+
+        
+
+          </p>
+          <p>
+            It is important to understand that every action we make always has consequences. As I have
+            stated above, the act of deforestation can get one into a dilemma on whether they should do it for
+            human needs or production but has a negative impact on the environment or to maintain the
+            sustainability of the environment but has lesser production of natural resources and causes
+            negative impact to humans. From what I've said above the dilemmas, that alone proves that there
+            are pros and cons when it comes to deforestation. So to begin with, let's tackle the pros of
+            deforestation to our environment and society, which according to what I've researched is that the
+            clearance of forests can pave the way for agricultural expansion. This allows countries to
+            increase food production or develop cash crops. Such land conversion can provide incentives for
+            industries like farming which, in turn, can lead to job creation and boost local economies (Boyle,
+            2024). To elaborate further, it is said that deforestation can also yield significant economic and
+            social advantages. From creating jobs to boosting local economies and expanding agriculture,
+            deforestation can unlock potential for development and growth in many regions. Next is the cons
+            of deforestation, as we delve into the cons of deforestation, we know for a fact that this issue has
+            a big negative impact towards our environment. Negative effects that we can consider would be
+            the loss of trees and other vegetation which can cause climate change, desertification, soil
+            erosion, fewer crops, flooding, increased greenhouse gasses in the atmosphere, and a host of
+            problems for Indigenous people (Ohlone, 2024). Through further analyzation, we can see that
+            this is the cause of the loss of the natural resource such as the trees which has a great benefits
+            towards us humans but this act of depletion of trees cause such imbalance towards our eco
+            system which does not only harm the environment but also the habitats that lives in it. We must
+            also consider that if we have lesser natural resources, we will get affected by this which can
+            cause lack of production and sustainability towards our community.
+            
+
+          </p>
+          <p>
+            Now, Let's delve into the dilemma of deforestation regarding the act of depletion of
+            natural resources, specifically deforestation for human needs and production. We all know that us
+            humans are heavily reliant on natural resources in order for us to live and make a living out of it.
+            As I have discussed, the products of deforestation are for the sake of human needs and to create a
+            space for buildings, farming , and other human activities. We might think that this is an unethical
+            act in the eyes of our ethics but we can confirm that this act is for the sake of human beings.
+            Which is why we can really bring ourselves to ask sometimes, is it really unethical if the act is
+            for the benefit of humans? In face of ethics, I'll say that it is unethical because even if we are
+            doing it for the sake of ourselves and to help our own community, others are still harm by the
+            actions that we did, such we can't really say that it is morally right, that is of course in my
+            perspective. We can really see what the consequences will be if we continue to engage in these
+            actions, that it does not only harm the environment, it can even cause the loss of natural
+            resources. The other dilemma is to maintain the sustainability of our environment but humans
+            will have lesser production and natural resources. Considering this dilemma, our environment
+            will be protected and sustained, the resources would be limited but this actions has a big impact
+            towards the lives of humans since we know that humans are heavily reliant on these resources,
+            thus, we can say that this limited resources that we apply on the environmental change might
+            improve the sustainability of our ecosystem but it could cause a huge conflicts for humans and
+            possibly a war might even start because of the limited resources. Which in the eyes of ethics, can
+            we really consider sustaining the environment if the impact is the conflict and lesser resources of
+            humans? In my own perspective, it is important that we must really preserve the sustainability of
+            our environment but we must also consider the life of humans since what is the use of these
+            resources if they're only limited to certain people? In my morals it is definitely important to
+            consider both sides before taking actions that will have varied consequences. Though, it is
+            evident what will be the consequences if we apply these actions towards our environment, it
+            causes human conflicts and loss of production.
+          
+          </p>
+          <p>
+            Furthermore, we know that deforestation is a complex environmental issue with possibly
+no solution, but we can also consider other methods in order for us to at least avoid abusing our
+environmental resources. Because these actions are solely based on us, even small actions that
+we do have big changes on our environment and ecosystem. So what I recommend is that we
+must reduce our consumption of products driving deforestation, like paper and meat, and support
+sustainable forestry practices like selective logging and reforestation. Strong laws and
+community involvement in forest management are also crucial, while technology like satellite
+imagery can monitor and enforce conservation efforts. Raising public awareness and educating
+individuals about the importance of forests are essential to inspire change and support
+sustainable practices. These activities that we imply can not only help the environmental
+sustainability but also improve environmental health, it led us to perhaps disregard the dilemma
+about deforestation between sustainability or the human needs. That these actions can help both
+humans and the environment in order to promote ecological peace. As such, these
+recommendations support the goals of Sustainable Development Goal 12, which focuses on
+ensuring sustainable consumption and production patterns, by promoting responsible resource
+management and reducing environmental impact. Encouraging sustainable land use and
+responsible agricultural practices can minimize deforestation and habitat destruction, which
+aligns with SDG 12’s objectives of efficient natural resource use and reducing degradation. By
+implementing reforestation projects and stricter regulations, companies and communities are
+taking actions to adopt sustainable consumption and production methods, fostering a culture of
+environmental responsibility. This approach not only conserves ecosystems but also supports
+livelihoods, contributing to a sustainable future that balances economic, social, and
+environmental needs.
+
+          </p>
+          <p>
+            To conclude, deforestation presents a complex dilemma that requires a delicate balance
+            between economic development and environmental sustainability. While deforestation can bring
+            short-term benefits such as agricultural expansion, increased land availability, and economic
+            growth through job creation and resource extraction, these gains are outweighed by its long-term
+            environmental consequences. The loss of forests accelerates climate change by reducing Earth’s
+            natural ability to absorb carbon dioxide, leads to the destruction of wildlife habitats, disrupts
+            ecosystems, and contributes to soil erosion and water scarcity. As a result, communities that rely
+            on these forests for their livelihood and peoples who call these areas home suffer greatly. To
+            address these challenges, it is crucial to adopt sustainable practices that prioritize both
+            environmental conservation and human needs or welfare. Strategies such as promoting
+            sustainable land use, and implementing reforestation efforts can help mitigate the damage, while
+            technology like satellite monitoring can enhance forest management and avoid illegal logging
+            activities. Moreover , it is equally important to reduce the consumption of products that drive
+            deforestation, such as palm oil and certain types of meat, and supporting businesses that adopt
+            sustainable sourcing methods. Engaging local communities in forest conservation, enforcing
+            stricter regulations, and promoting education and awareness about the value of forests are critical
+            steps toward fostering a culture of environmental responsibility. These measures align with the
+            objectives of Sustainable Development Goal (SDG) 12, which emphasizes the need for
+            sustainable consumption and production patterns to ensure long-term ecological health and
+            resource availability. By implementing a combination of these strategies or recommendations,
+            society can work toward a sustainable future where economic development and environmental
+            protection coexist, thereby securing the integrity of ecosystems and the well-being of future
+            generations which we can ensure that always leads to ecological peace.
+            
+
+          </p>
+        
+          <section id="kk">
+            <h2>Addressing Water Pollution through Ethical Consumptions</h2>
+              <h3>  By: Karnela Shai C. Generalao</h3>
+
+            <p>
+                There are many discussions regarding the various environmental issues we face from time to time
+and sometimes these discussions could turn into some interesting dilemmas and in this case, we
+will look at a dilemma about water pollution and the ways to mitigate and control it. This dilemma
+is quite an interesting one as this would also serve as a sustainable way for consumption and
+production as reducing or at the very least would help lessen the dangers that come with water
+pollution, especially with the waste we dump into our waterways. It is also worth mentioning the
+benefits that come with reducing waste as well as reducing the consumption of our resources. As
+stated above I will explain first what it means to be sustainable in both consumption and
+production. This development goal pertains to our ability to find sustainable ways to improve our
+quality of life by reducing the amount of resources we use on a day-to-day basis, hence why this
+dilemma would fit well because it would take a look on how to mitigate water pollution and reduce
+our waste production as well as reduce the amount of resources needed to make the products we
+consume especially with products that require the use of water in its production
+            </p>
+            <p>
+                As stated above, this dilemma could very fit well with the sustainable development goal number
+twelve pertaining the sustainable consumption and production of resources. Another thing that I
+did not mention is that this sustainable goal would be in line with the ethical principles considering
+that these principles give an insight as to how we could attain a better quality of life. This is also
+evident in SDG 12 since it deals with giving people better quality of life without the use of too
+many resources and at the same time it does not comprise our day-to-day lives. This can also be
+said the same with the ethical principles since it takes a look at how to provide a better life for the
+people without compromising their morals and ethics. As such I will also discuss my insights on
+making environmentally responsible choices especially when these choices have a huge ethical
+impact on how we see and treat our environment. First, I learned that when making these choices
+will always have to learn how to analyze whether it would be beneficial for us and the environment
+or not. Second, it taught me that these choices could have many unforeseen implications if not
+assessed properly. Lastly, when making these choices we must also consider the long-term effects
+and whether it would be beneficial for us or not in the long run. 
+            </p>
+            <p>
+                Regarding my analysis, it would also be beneficial to give recommendations in lessening the
+consumption or use of our resources to individuals, businesses, and the governing body as well.
+First and foremost, education is a must if we want to have a sustainable life in regards to reducing
+the use of resources since educating the masses would be beneficial and also help spread awareness
+of the causes which in this case would be water pollution. Second, businesses should find ways to
+cut down on the use of resources especially with the waste that they produce, the waste produced
+by them could pose a threat to us considering their waste could add up to the pollution hence
+reducing the quality of life for the masses. Third, government officials should implement programs
+that would greatly benefit the environment and in the case of water pollution, they should find
+ways to reduce the waste produced by businesses and find ways to make it efficient and the same
+time lessen the consumption of resources. Lastly, aside from programs, there should also be laws
+or even in this case policies that should be implemented to help the environment and the same time
+improve the quality of life for the people without compromising our resources. It is also worth
+mentioning that these recommendations would follow the SDG 12 goal of giving people a better
+quality of life by reducing the consumption and production of our resources without compromising
+our necessities. If followed these recommendations could potentially help save the environment,
+give the people a better quality of living, and lessen environmental issues by reducing our use of
+our resources to better our lives in the long run and prevent more issues from arising and at the
+same time provide a sustainable future for us and for the future generations to come.
+            </p>
+    
+              
+
+
+
+
+
+
+          <section id="dd">
+         <h2>Nature’s Advocates: WWF Philippines and the Fight for Biodiversity </h2>
+              <h3> By: Bratislava Slovakia S. Benaojan </h3>
+        <p>
+            In this world full of cruelty and irresponsible people that do not logicalize their actions
+            towards their surroundings which is the environment/whole world. Sustainable Consumption and
+            Production (known as SCP) is about doing more and better with less. It is also about decoupling economic
+            growth from environmental degradation, increasing resource efficiency and promoting sustainable
+            lifestyles. SCP or Responsible Consumption and Production is a work towards a world of peace and
+            prosperity, eradicating environmental issues such as overconsumption, habitat loss, energy waste, and
+            food waste, all while protecting the planet. SCP is all about ensuring sustainable consumption and
+            production patterns, which is key to sustain the livelihoods of current and future generations. This is an
+            important key factor especially for everyone, because we all know that there are a lot of people who are
+            becoming irresponsible even though they know that our environment lacks development and care.
+            Responsible Consumption and Production is one of the best SDGs that we can apply or use when it comes
+            to achieving a sustainable development and sustainable future for the environment.
+            
+
+        </p>
+        <p>
+            The World Wide Fund for Nature (WWF) Philippines consists of four(4) main focuses
+            which are the consumption, habitat, energy, and food. First aspect that they work to achieve their mission
+            is consumption or what we called overconsumption, which means that in the economy, it involves
+            households using resources like food, housing, and entertainment to meet their needs and wants, utilizing
+            goods and services to satisfy their wants. It is the human practices that are progressively destroying the
+            environment through overusing the world’s resources faster which affects the environment and global
+            health or so called overconsumption. Second is Habitat, Habitat destruction is one of the biggest threats
+            facing plants and animal species throughout the world. The loss of habitat has far-reaching impacts on the
+            planet’s ability to sustain life, but even with the challenges, there is hope for the future. Habitat
+            destruction, defined as the elimination or alteration of the conditions necessary for animals and plants to
+            survive, not only impacts individual species but the health of the global ecosystem. Habitat loss is
+            primarily, though not always, human-caused. The clearing of land for farming, grazing, mining, drilling,
+            and urbanization impact the 80 percent of global species who call the forest home. Approximately 15
+            billion trees are cut down each year. There are many reasons why energy crises occur. Many people in the
+            world use energy as energy resources for homes, industries, and etc. The cause of energy crises includes
+            overpopulation, infrastructure deterioration, waste of energy, and overconsumption of energy which are
+            all causes of human activities. Overpopulation when people demand more energy resources to sustain
+            their needs and that causes the overuse of energy resources. Infrastructure deterioration is when people
+            insist that utilities like energy resources must raise their transportation system to sustain a dominant scale
+            of energy resources, in short it is a general energy shortage. Waste energy is when people don't understand
+            the importance of energy resources and they just want to maintain energy for themselves without even
+            thinking about the consequences of their mindset that might affect the environment and continue to waste
+            it. Overconsumption of energy or what we call overuse of renewable energy will usually cause
+            greenflation or simply inflation to occur which mainly causes an increasing price of supplies because of a
+            dominant level of demand but lack of supplies. Food shortage is mainly caused due to overpopulation,
+            climate change that affects the soil quality, and food waste. Due to overpopulation, many people want to
+            sustain their needs to feed themselves and that causes food production to run out of food supply. Due to
+            climate change, the change of the living conditions of the environment and the people involved, and also
+            the soil quality that is used to plant vegetables or foods. Food waste is when food is not consumed by
+            humans and just thrown away without thinking that it can be used to recycle. Wasting food is like wasting
+            the energy, water used to grow and all the important factors that are used to create and distribute all the
+            foods in different places without even thinking about its benefits. The WWF or World Wide Fund for
+            Nature Philippines track this kind of mission to combat the cause of overconsumption, habitat loss, energy
+            waste, and food waste to have a better environment for the whole world and future generations.
+        </p>
+
+<p>
+    WWF or World Wide Fund for Nature Philippines is one of the organizations that helps combat
+    the environmental issues that occur in the philippines. The World Wide Fund for Nature helps protect,
+    conserve, the habitats, consumption, energy, and food. They go around the world to help donate food and
+    funds to the different environments to support them and make sure that they have a clean and safe
+    environment, good habitats for all, energy that is enough to support their everyday needs of electricity,
+    and enough supply of food. The World Wide Fund for Nature(WWF) Philippines promotes ecological
+    peace to the environment through their efforts and work to sustainable development of responsible
+    consumption and production. WWF-Philippines works to address the negative impacts of human
+    consumption on the environment including pollution and waste. The "No Plastics In Nature" initiative has
+    partnered with communities, cities, and government agencies all over the Philippines for projects that
+    reduce the amount of plastics harming animals and ecosystems.
+    
+    
+
+</p>
+<p>
+    According to WWF works, WWF-Philippines works to protect, conserve, and rehabilitate
+    habitats across the country because they are the foundations upon which all of nature thrive. The human
+    impact on habitats have been overlooked for many decades leading to extreme degradation in some
+    ecosystems. Restoring habitats to become lush landscapes once again will greatly benefit entire
+    communities that depend on it for their livelihood and also the biodiversity of life that call it home.
+    WWF-Philippines works to accelerate the country's transition to renewable energy systems and to reduce
+    greenhouse gas emissions from energy consumption. Working closely with policymakers and
+    governments on the national and local levels to tackle this challenge is part of our principle of "Together,
+    Possible." WWF-Philippines works to ensure the sustainable production of food for all Filipinos. Food is
+    vital to all life, but the severe effects of climate change increasingly threaten it. Drought, severe typhoons,
+    and flooding are a few calamities that are expected to become more frequent because of global warming.
+    Filipino farmers and fishers, already among the poorest in the country, face greater risks in growing food
+    for the population.
+    
+
+</p>
+<p>
+    According to deontology, the work of WWF is ethical. Deontology is the rule and duty
+    of a human person as universal law. Deontological ethics acknowledges that actions are morally
+    independent of outcomes because good actions can result in bad outcomes and vice-versa. The World
+    Wide Fund for Nature Philippines follows the rules and duty of their work as a human person as universal
+    law that shows the actions towards achieving and promoting ecological peace and sustainable
+    development as a responsibility of the human actions that caused the environment to get polluted all over
+    the world. The WWF implies that working on this kind of mission with people, for people is to build a
+    future where Filipinos live in harmony with nature, where ecological peace is present all over the
+    philippines. Not only that, but it is also crucial to enhance the sustainability of the society, making the
+    world to have a peaceful life in their surroundings. The work of WWF helps the people in the Philippines
+    to prevent the different effects of climate change that cause bad air quality, lack of food production, and
+    etc. It implies that it reverses the Philippine environmental issue into a more habitable environment. In
+    order to determine whether the organization’s work or actions towards their mission is ethical, deontology
+    also emphasizes the goodness of the purpose regardless of the action, despite the possible outcome of the
+    actions/work. The dilemma shows the morality of deontology because of their actions to fulfill the world's
+    needs. They also follow the SDG 12(Responsible consumption and production) that is associated with the
+    meaning or focus of deontology as a human person. An action can only be moral if it has goodwill behind
+    it and if the action is dutiful or necessary. Therefore, WWF or also known as World Wide Fund for Nature
+    Philippines is ethically responsible for deontology’s definition and is suitable for promoting a sustainable
+    development to the environment.
+    
+  
+
+</p>
+<p>
+    Environmentally responsible choices create a better position or level in our environment
+    which upholds and has a better understanding of our environment/whole world needs. The personal
+    insights I have gained to become more environmentally responsible is that we, people, should be
+    responsible for our actions towards the environment. We should think more of our actions towards our
+    surroundings and be aware of our environment's condition because environmental issues are caused by
+    human activities. We cannot protect and improve our environment without the human duty as a
+    responsibility to what they have caused to the environment. There are many reasons why environmental
+    issues happen which are all human activities. If all humans are not responsible for their actions, the
+    environment and the people will live in a world full of immorality. The environment is not good if we let
+    it go because there is nothing to change, nothing to improve the effect on the environment will worsen
+    because of the actions of people who do not think about their bad actions towards the environment and the
+    consequences that might also affect their lives. The pride and misbehavior of the human’s actions will get
+    the environment to be in a bad condition because it will affect many aspects of our surroundings.
+    Environmental issues are mainly caused by human activities and natural causes. It is our responsibility
+    and duty to protect and improve our environment. Ethics and responsibilities towards the environment
+    creates a fundamental principle based on ethical obligations to the environment. They shape our mindsets,
+    actions and choices moulding how we treat and affect the environment. These duties and values promote
+    stewardship along with the idea that we are meant to be responsible stewards of the Earth as conservators
+    of resources and biodiversity for future generations. It means revering nature and recognizing the wonder
+    of ecosystems and the rights of non-human beings. We are part of a web of life — what we do to one
+    element in the environment has effects, often devastating cascading through all others. In this, the right to
+    leave a livable and healthy planet, it demands responsible resource management and to refrain from
+    making decisions burdened with more consequences for subsequent generations. In this regard, we require
+    a type of moral revolution to be able to change human conduct for the benefit of the society.
+    
+
+
+</p>
+<p>
+    Based on the analysis, recommendations or suggestions that I would propose to
+    individuals, businesses, or policymakers to encourage prudence and frugality in decision-making
+    sustainability is that we should be more sensitive to our actions or what we do everyday as human beings
+    and should think before doing such a thing if those actions will result in a negative outcome to our
+    surroundings including the environment, the people that will be affected, and especially our individuals.
+    Instead of wasting time, food, energy or strength, mind, plan, knowledge, and other human actions or
+    being, we should value everything even if it is small things or big. It is like ensuring and moderating that
+    all of our natural resources and human sources of information that are all being used carefully and
+    mindfully as a collaboration and participation as responsibilities that we have everyday as a human person
+    or human being. Everything we do, everything we act, and everything we think defines a person's
+    behavior or character, universal law of human person’s duties and rules, and there are always
+    consequences of our actions that focus on outcomes. Through ethical theory and environmental ethics, we
+    learned how to value and be responsible for everything in our surroundings as who we are, what our
+    purpose, and how we should act towards diversity. In individuals, we can encourage them to think wisely
+    about their actions towards people, environment, etc even if it is small —adopt more sustainable lifestyles
+    – this can involve consuming less, choosing products with lower environmental impacts, and reducing the
+    carbon footprint of day-to-day activities. In businesses, we can encourage them to think wisely on how
+    they should manage their business so that they don’t go bankrupt —a better understanding of
+    environmental and social impacts of products and services is needed, both of product life cycles and how
+    these are affected by use within lifestyles. In policymakers, we can encourage them through making
+    decisions wisely of how they should decide what policy they should implement — making sure that it has
+    a positive effect on the recipient. Through prudence and frugality, we can encourage the individuals,
+    businesses, or policymakers to be more careful about their decisions or choices, and think first before
+    doing it or acting. To be wise of their decision making.
+    
+   
+
+</p>
+<p>
+    These recommendations contribute to achieving the goals of SDG 12 and promoting a
+    sustainable future through wise decision making. In terms of achieving the goals of SDG 12 and
+    promoting a sustainable future, we can easily say that being wise about our decisions or choices can avoid
+    the negative effect that might affect the overall factors of human living and the environment. Encouraging
+    them to be more careful of their own decisions in life can create or change their mindset to be more
+    responsible that will surely benefit their way of living. It is like we have to think first if this decision can
+    surely benefit them or if these actions can achieve the SDG 12 which is responsible consumption and
+    production and promotes a sustainable future. Even if it is a job, business, environment, and all factors in
+    our surroundings and human living. Prudence and frugality can also help people to think critically and
+    value small things that contribute to achieving goals like SDG 12 and promoting a sustainable future. On
+    what is the best way to do as individuals, businesses and policymakers in achieving SDG 12 and
+    promoting a sustainable future —which guides us to have a better understanding of a proper method with
+    alignment to the environment needs for sustainable development. WWF or World Wide Fund for Nature
+    Philippines as duties and responsibilities of human person through having prudence and frugality of an
+    action and mind in terms of decision making that is moral to achieve the goals of SDG 12 and promotes
+    sustainable future — a good outcome that benefits the majority. Therefore, WWF is the best method in
+    terms of showing responsible consumption and production that has prudence and frugality to combat
+    environmental issues to be more wise in decision making which also shows the principle of ethics helping
+    each other and educating one’s self to have a good consequences/outcome that benefits the overall factors
+    of human living.
+                       
+
+</p>
+<section id="gg">
+    <h2>A Call for Sustainable Consumption and Production Amidst to The Global Arsenic Problem </h2>
+         <h3> By: Lady Erika V. Barinque </h3>
+<p>
+    Have you come across this odd and difficult situation like dilemmas that can make us
+wonder how would we be able to decide which is the best way in choosing the right
+course of action, even though they both have positive and negative impact to our
+environments prompting ethical consideration and action, furthermore the world faces
+urgent ecological challenges which we are in need to promote ecological peace in order
+to maintain prosperity to our society and to our environments which needs conservative,
+economical and frugal principles to handle this particular scenario. Through the guidance
+of the SDG 12 calls for responsible consumption and production, fundamentally severing
+economic growth from unsustainable resource use, emission and be able to improve the
+management of hazardous substance. One of the goals include implementation of the
+10-Year Framework of Programs on Sustainable Consumption and Production, efficient
+management and use of natural resources, cutting various types of waste, and
+responsible management of wastes and chemicals. It also calls for adoption of
+sustainable practices in companies and in public procurement. This case we can be able
+to correlate SDG 12 on how the ethical principle can help us lead the path in deciding and
+making the right decisions.
+</p>
+<p>
+    Across the globe, approximately 140million people are at risk of consuming arsenic
+contaminated water, so as we keep on dwelling with this environmental dilemma about
+the arsenic consumption and production. The global dilemma of arsenic contamination
+appeared to be, significant environmental issues that connects to the sustainable
+development Goal 12(SDG 12) which place a big role on producing and consuming goods
+responsibly. Arsenic is a notoriously toxic heavy metal that is also present in nature and
+throughout our environments, where it can pose a major threat or risk to public health.
+Through this there is a possibility that it can contaminates food and water sources,
+especially rice and cereals. The issue of ensuring access to food and water that is free
+from arsenic contamination still not sufficient. Through the principle of justice demands
+that all individual have access to food and safe drinking water, with focusing on
+populations that are particularly vulnerable and impacted by exposure to arsenic.
+Transparency in food production is necessary for ethical consumption, as industry is
+prioritizing the public health over profitable production by utilizing the arsenic in
+manufacturing glass, pigments, textiles, paper, metal, adhesives, wood preservatives and
+ammunitions. By abiding by these guidelines, nations can create policies that safeguard
+the environment and advance social justice, making sure no one is left behind in the
+pursuit of sustainability. So as the industries dependent on mineral extraction and
+agricultural production depend on our economy, ethical implications of this contamination
+force us to balance health and safety above all else. Participation is essential to
+addressing arsenic contamination and achieving SDG 12. Justice requires that everyone,
+especially those who reside in developing countries where the majority of this
+environmental crisis is occurring, have equal access to food and water that is free of
+arsenic. Besides adequate governance, which places restrictions on the amount of
+arsenic in consumables, sufficiency emphasizes that each and every person has a right
+to an adequate supply of resources for their health and well-being.
+</p>
+<p>
+    By trying to integrate
+the ethical principles with SDG 12 these demonstrate the ethical value of justice,
+sufficiency, solidarity. Justice necessitates ensuring equal access to arsenic-free water
+and food for all individuals, particularly those in developing countries who bear the brunt
+of this environmental crisis. Sufficiency emphasizes that every person has the right to
+adequate resources for health and well-being, alongside effective governance that
+imposes limits on arsenic levels in consumables. Through solidarity, global partnerships
+can prioritize communities most affected by arsenic, fostering a cooperative approach to
+remediation efforts. Lastly, participation calls for the inclusion of local voices in monitoring
+water safety and advocating for change, thus empowering communities to protect their
+own health. It demonstrated that consequentialism is the foundation of environmental
+ethics. A consequentialist approach would assess practices and policies in the context
+of arsenic contamination based on how well they reduce exposure and enhance public
+health outcomes would give top priority to measures that solve the problem of arsenic
+contamination and benefit the greatest number of people. 
+</p>
+<p>
+By trying to Reflect the
+implications of arsenic contamination has underscored the importance of our
+environmentally responsible choices. By prioritizing locally sourced, organic products, we
+can be able to reduce the risk of consuming harmful chemicals and support ethical
+businesses committed to sustainable practices. It is essential to advocate for stringent
+regulations on industries that contribute to pollution, this means that by launching
+evaluated larger-scale efforts, such as public awareness campaigns, legislative
+modifications, and community engagement, that can cumulatively lower the levels of
+arsenic in drinking water and food supplies. Through concentrating on policies that result
+in noteworthy improvements in health, interested parties synchronize their activities with
+consequentialist views. Through Adopting these suggestions will encourage more
+responsible resource management and healthier consumption habits, which will be very
+helpful in achieving the SDG 12's objectives. We can reduce arsenic contamination and
+foster a sustainable culture that prioritizes environmental integrity and human health by
+combining ethical consumption with efficient production methods. To sum up this case
+the arsenic problem highlights the urgency in providing sustainable consumption and
+production practices that prioritize health and environmental wellness. By correlating the
+ethical principles and a consequentialist approach, we can minimize the arsenic pollution
+while improving health outcomes. Access to food and clean water depends on the
+combined efforts of citizens, companies, and lawmakers who uphold moral goods and
+advocates stricter regulations. So every tiny action counts toward ecological peace and
+sustainable future generations.
+</p>
+        </div>
+</div>
+
+  
+
+ <footer>
+        <p>&copy; 2024 Earth Science Resources | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
